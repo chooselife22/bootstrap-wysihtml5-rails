@@ -5079,6 +5079,12 @@ wysihtml5.dom.parse = (function() {
         return attributeValue || null;
       };
     })()
+
+    allow: (function() {
+      return function(attributeValue) {
+        return attributeValue;
+      };
+    })
   };
 
   // ------------ class converter (converts an html attribute to a class name) ------------ \\
